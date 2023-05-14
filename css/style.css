@@ -1,0 +1,313 @@
+/* link font */
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&family=Open+Sans:ital,wght@0,600;1,300;1,400;1,600&family=Poppins:ital,wght@0,400;0,700;1,100;1,500;1,700&display=swap");
+
+/* link font judul */
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&family=Jim+Nightshade&family=Open+Sans:ital,wght@0,600;1,300;1,400;1,600&family=Poppins:ital,wght@0,400;0,700;1,100;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full-container {
+  background-color: #0f1827;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.full-container .Home-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.full-container .Home-page nav {
+  display: flex;
+  width: 100%;
+  background-color: #0f1827;
+  justify-content: space-between;
+  padding: 15px 6%;
+  /* background-color: aliceblue; */
+  align-items: center;
+  border-bottom: 0.5px solid #c08310;
+  position: fixed;
+}
+
+.full-container .Home-page nav p {
+  font-family: "Jim Nightshade", cursive;
+  color: #f9a814;
+  font-size: 2.5rem;
+  filter: drop-shadow(3px 1px 1px rgb(255, 255, 255));
+}
+
+.full-container .Home-page nav .link {
+  z-index: 1;
+}
+
+.full-container .Home-page nav .link li {
+  display: inline-block;
+  margin: 0 30px;
+  justify-content: space-between;
+  transition: 0.1s;
+}
+
+.full-container .Home-page nav .link li:active {
+  transform: scale(0.95);
+}
+
+.full-container .Home-page nav .link li a {
+  padding: 3px 1px;
+  border-radius: 2px;
+  transition: all 0.1s;
+  color: #fdfdff;
+}
+
+.full-container .Home-page nav .link li:hover a {
+  border-bottom: 3px solid rgba(216, 216, 216, 1);
+}
+
+.full-container .Home-page nav .link li a:active {
+  color: #c5c5c5;
+}
+
+.full-container .Home-page nav ul li {
+  list-style: none;
+}
+
+.full-container .Home-page nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.full-container .Home-page nav .link .contact-nav,
+.full-container .Home-page nav .contact li {
+  background-color: #f9a814;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
+.full-container .Home-page nav .link .contact-nav {
+  display: none;
+}
+
+.full-container .Home-page nav .link .contact-nav,
+.full-container .Home-page nav .contact li:hover {
+  background-color: #c08310;
+}
+
+.full-container .Home-page nav .contact li:active {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: scale(0.9);
+  color: #f9a814;
+}
+
+.contact img {
+  display: none;
+}
+
+/* akhir       navvvv */
+
+/* awal     menu homee */
+.home-page-utama {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  /* background-color: #c08310; */
+  padding: 0 6%;
+}
+
+.home-page-utama .write-sapaan {
+  flex: 2;
+  margin-top: 80px;
+}
+
+.home-page-utama .write-sapaan h1 {
+  font-size: 5.3rem;
+  line-height: 72px;
+}
+
+.home-page-utama .write-sapaan h2 {
+  font-size: 45px;
+  line-height: 70px;
+}
+
+.home-page-utama .write-sapaan h2 span {
+  color: #f9a814;
+}
+
+.home-page-utama .write-sapaan p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.home-page-utama .write-sapaan button {
+  background-color: #f9a814;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.home-page-utama .write-sapaan button:hover {
+  background-color: #c08310;
+}
+
+.home-page-utama .write-sapaan button:active {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: scale(0.95);
+  color: #f9a814;
+}
+
+.home-page-utama .my-images {
+  flex: 1;
+  /* background-color: aqua; */
+}
+
+.home-page-utama .my-images img {
+  width: 450px;
+  margin-top: 100px;
+}
+/* awall    about  */
+.full-container .about {
+  height: 530px;
+  width: 100%;
+  background-color: #0f1827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-container .about .about-informasi {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 410px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
+}
+/* akhir     about */
+
+/*  */
+/*  */
+/* responsive */
+@media (max-width: 1025px) {
+  html {
+    font-size: 80%;
+  }
+  .full-container .Home-page nav .link {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
+    height: 85vh;
+    width: 40%;
+    position: absolute;
+    right: -100%;
+    z-index: 1;
+    top: 80.5px;
+    transition: all 0.5s;
+  }
+  .full-container .Home-page nav .link.active {
+    /* background-color: aliceblue; */
+    height: 85vh;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 80.5px;
+  }
+
+  .full-container .Home-page nav .link .li-link {
+    display: block;
+    margin: 50px 25px;
+    text-align: left;
+  }
+  .full-container .Home-page nav .link .li-link a {
+    border-bottom: 2px solid rgba(62, 61, 61, 05);
+    padding: 10px 230px 10px 0;
+    color: #aeaeae;
+    transition: all 0.2s;
+  }
+  .full-container .Home-page nav .link .li-link a:active {
+    transform: scale(0.98);
+  }
+  .full-container .Home-page nav .link .li-link a:hover {
+    padding: 3px 30px 0 2px;
+  }
+  .full-container .Home-page nav .contact {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact img {
+    display: block;
+    margin: 0 15px 0 0;
+  }
+
+  .home-page-utama {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-page-utama .write-sapaan {
+    order: 2;
+    text-align: center;
+    /* background-color: #c5c5c5; */
+  }
+  .home-page-utama .write-sapaan h1 {
+    font-size: 68px;
+  }
+
+  .home-page-utama .write-sapaan h2 {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .home-page-utama .my-images img {
+    width: 220px;
+    margin-top: 250px;
+    /* background-color: #c5c5c5; */
+  }
+}
+
+@media (max-width: 820px) {
+  .full-container .Home-page nav .link .contact-nav {
+    display: block;
+  }
+
+  .full-container .Home-page nav .link .contact-nav {
+    background-color: #f9a814;
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+  }
+
+  .full-container .Home-page nav .link .contact-nav:active {
+    background-color: transparent;
+    border: 1px solid white;
+    transform: scale(0.9);
+    transition: all 0.3s;
+    color: #f9a814;
+  }
+
+  .full-container .Home-page nav .contact {
+    width: 10%;
+    justify-content: center;
+  }
+
+  .full-container .Home-page nav .contact li {
+    display: none;
+  }
+}
