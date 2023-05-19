@@ -8,13 +8,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid white; */
+  border: 1px solid rgb(255, 5, 5);
 }
 
 .full-container {
   background-color: #0f1827;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 2000px;
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
@@ -26,7 +26,7 @@
 
 .full-container .Home-page nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   background-color: #0f1827;
   justify-content: space-between;
   padding: 15px 6%;
@@ -132,6 +132,17 @@
 .home-page-utama .write-sapaan h1 {
   font-size: 5.3rem;
   line-height: 72px;
+  text-shadow: 3px 2px 3px #c08310;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.home-page-utama .write-sapaan:hover h1 {
+  font-size: 5.3rem;
+  color: rgba(125, 125, 124, 0.5);
+  margin-left: 10px;
+  line-height: 72px;
+  text-shadow: 50px -10px 3px rgba(192, 131, 16, 0.1);
 }
 
 .home-page-utama .write-sapaan h2 {
@@ -171,29 +182,78 @@
 
 .home-page-utama .my-images {
   flex: 1;
+  display: flex;
   /* background-color: aqua; */
 }
 
 .home-page-utama .my-images img {
   width: 400px;
   margin-top: 100px;
+  transition: all 0.6s;
 }
+.home-page-utama .my-images img:hover {
+  width: 450px;
+  margin-right: 50px;
+  /* filter: drop-shadow(100px 10px 10px rgba(249, 168, 20, 0.05)); */
+}
+
 /* awall    about  */
 .full-container .about {
-  height: 530px;
+  height: 100%;
   width: 100%;
   background-color: #0f1827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 3px solid blue;
+}
+
+.full-container .about h1 {
+  font-size: 3rem;
+  margin-bottom: 1.1em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-bottom: 20px solid transparent;
+}
+
+.full-container .about:hover h1 {
+  border-bottom: 20px solid #c0821048;
+  padding: 0 5px;
+  color: #aeaeae;
+  border-radius: 10px;
 }
 
 .full-container .about .about-informasi {
-  width: 70%;
+  width: 75%;
   background-color: rgba(255, 255, 255, 0.1);
-  height: 410px;
+  height: 100%;
+  padding: 25px 10px;
+  text-align: center;
   border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
+}
+
+.full-container .about .informasi-again {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 5%;
+  height: 100%;
+}
+
+.full-container .about .informasi-again p {
+  width: 100%;
+  padding: 25px 10px 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 11px;
+  height: 95%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.7);
   box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
 }
@@ -221,7 +281,7 @@
   }
   .full-container .Home-page nav .link.active {
     /* background-color: aliceblue; */
-    height: 90vh;
+    height: 85vh;
     width: 50%;
     position: absolute;
     right: 0;
@@ -269,14 +329,39 @@
     /* background-color: #c5c5c5; */
   }
 
+  .home-page-utama .write-sapaan h1 {
+    font-size: 5.3rem;
+    line-height: 72px;
+    text-shadow: 3px 2px 3px #c08310;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .home-page-utama .write-sapaan:hover h1 {
+    font-size: 5.3rem;
+    margin-left: 10px;
+    line-height: 10px;
+    text-shadow: 50px -10px 3px rgba(192, 131, 16, 0.1);
+  }
+
   .home-page-utama .write-sapaan p {
     font-size: 14px;
   }
 
   .home-page-utama .my-images img {
-    width: 180px;
+    width: 200px;
     margin-top: 100px;
     /* background-color: #c5c5c5; */
+  }
+
+  .home-page-utama .my-images img:hover {
+    width: 200px;
+    margin-top: 80px;
+    margin-right: 0;
+    /* filter: drop-shadow(100px 10px 10px rgba(249, 168, 20, 0.05)); */
+  }
+  .full-container .about p {
+    font-size: 14px;
   }
 }
 
@@ -334,5 +419,16 @@
   }
   .full-container .Home-page nav p {
     font-size: 2.9rem;
+  }
+  .full-container .about .informasi-again {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .full-container .about .informasi-again p {
+    width: 55%;
+  }
+  .full-container .about {
+    margin-top: 130px;
   }
 }
