@@ -8,7 +8,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid rgb(255, 5, 5);
+  /* border: 1px solid rgb(255, 5, 5); */
 }
 
 .full-container {
@@ -84,33 +84,31 @@
   font-size: 1rem;
 }
 
-.full-container .Home-page nav .link .contact-nav,
-.full-container .Home-page nav .contact li {
+.full-container .home-page nav ul .logo {
+  display: none;
+}
+
+.full-container .Home-page nav .contact a {
+  padding: 0 15px;
+}
+
+.full-container .Home-page nav .link .contact-nav {
   background-color: #f9a814;
   padding: 6px 15px;
   border-radius: 5px;
 }
 
-.full-container .Home-page nav .link .contact-nav {
+.full-container .Home-page nav .link .logo {
   display: none;
 }
 
-.full-container .Home-page nav .link .contact-nav,
-.full-container .Home-page nav .contact li:hover {
-  background-color: #c08310;
-}
-
-.full-container .Home-page nav .contact li:active {
-  background-color: transparent;
-  border: 1px solid white;
-  transform: scale(0.9);
-  color: #f9a814;
+.full-container .Home-page nav .link .logo a {
+  padding: 0 15px;
 }
 
 .contact img {
   display: none;
 }
-
 /* akhir       navvvv */
 
 /* awal     menu homee */
@@ -126,7 +124,7 @@
 
 .home-page-utama .write-sapaan {
   flex: 2;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .home-page-utama .write-sapaan h1 {
@@ -187,8 +185,9 @@
 }
 
 .home-page-utama .my-images img {
-  width: 400px;
-  margin-top: 100px;
+  width: 390px;
+  margin-top: 150px;
+  box-sizing: border-box;
   transition: all 0.6s;
 }
 .home-page-utama .my-images img:hover {
@@ -197,75 +196,57 @@
   /* filter: drop-shadow(100px 10px 10px rgba(249, 168, 20, 0.05)); */
 }
 
-/* awall    about  */
-.full-container .about {
-  height: 100%;
-  width: 100%;
-  background-color: #0f1827;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid blue;
-}
-
-.full-container .about h1 {
-  font-size: 3rem;
-  margin-bottom: 1.1em;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-bottom: 20px solid transparent;
-}
-
-.full-container .about:hover h1 {
-  border-bottom: 20px solid #c0821048;
-  padding: 0 5px;
-  color: #aeaeae;
-  border-radius: 10px;
-}
-
-.full-container .about .about-informasi {
-  width: 75%;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 100%;
-  padding: 25px 10px;
-  text-align: center;
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
-}
-
-.full-container .about .informasi-again {
-  display: flex;
-  width: 90vw;
+/* project */
+.full-container .project {
+  margin-top: 90px;
+  padding: 0 6%;
   justify-content: space-between;
-  gap: 50px;
-  margin: 5%;
-  height: 100%;
 }
 
-.full-container .about .informasi-again p {
+.full-container .project .kumpulan-project {
+  display: flex;
   width: 100%;
-  padding: 25px 10px 0 10px;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 11px;
-  height: 95%;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  box-shadow: -8px 6px 17px rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  transition: all 0.3s;
 }
-/* akhir     about */
+
+.full-container .project h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.full-container .project .project-1 {
+  height: 100%;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #f9a814;
+}
+
+.full-container .project .project-1 img {
+  width: 100%;
+  padding: 10px;
+}
+
+.full-container .project .project-1 a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  color: #0f1827;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.full-container .project .project-1:hover {
+  transform: scale(1.04);
+}
 
 /*  */
 /*  */
 /* responsive */
 @media (max-width: 1025px) {
-  * {
-    font-size: 80%;
-  }
   .full-container .Home-page nav .link {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid rgba(255, 255, 255, 0.7);
@@ -318,6 +299,15 @@
     margin: 0 15px 0 0;
   }
 
+  .full-container .Home-page nav .contact a {
+    display: none;
+  }
+
+  .full-container .Home-page nav .logo {
+    display: block;
+    padding: 0 15px;
+  }
+
   .home-page-utama {
     flex-direction: column;
     justify-content: center;
@@ -350,7 +340,7 @@
 
   .home-page-utama .my-images img {
     width: 200px;
-    margin-top: 100px;
+    margin-top: 250px;
     /* background-color: #c5c5c5; */
   }
 
@@ -360,17 +350,18 @@
     margin-right: 0;
     /* filter: drop-shadow(100px 10px 10px rgba(249, 168, 20, 0.05)); */
   }
-  .full-container .about p {
-    font-size: 14px;
+
+  .full-container .project {
+    margin-top: 250px;
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1015px) {
   * {
-    font-size: 50%;
+    font-size: 60%;
   }
 
-  .full-container .Home-page nav .link .contact-nav {
+  .full-container .Home-page nav .link .logo {
     display: block;
   }
 
@@ -419,16 +410,5 @@
   }
   .full-container .Home-page nav p {
     font-size: 2.9rem;
-  }
-  .full-container .about .informasi-again {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .full-container .about .informasi-again p {
-    width: 55%;
-  }
-  .full-container .about {
-    margin-top: 130px;
   }
 }
