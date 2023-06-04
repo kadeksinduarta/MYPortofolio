@@ -66,7 +66,7 @@
   color: #fdfdff;
 }
 
-.full-container .Home-page nav .link li:hover a {
+.full-container .Home-page nav .link li a:hover {
   border-bottom: 3px solid rgba(216, 216, 216, 1);
 }
 
@@ -244,6 +244,13 @@
   transform: scale(1.1);
 }
 
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #293345;
+}
+
 /*  */
 /*  */
 /* responsive */
@@ -304,13 +311,14 @@
     display: none;
   }
 
-  .full-container .Home-page nav .logo {
+  .full-container .Home-page nav .link .logo {
     display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
     padding: 0 15px;
-  }
-
-  .full-container .Home-page nav .logo a:hover {
-    color: #c08310;
+    border: none;
   }
 
   .home-page-utama {
@@ -361,10 +369,6 @@
 @media (max-width: 950px) {
   * {
     font-size: 60%;
-  }
-
-  .full-container .Home-page nav .link .logo {
-    display: block;
   }
 
   .full-container .Home-page nav .link .contact-nav {
