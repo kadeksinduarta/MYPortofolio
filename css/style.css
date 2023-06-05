@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
   /* border: 1px solid rgb(255, 5, 5); */
 }
 
